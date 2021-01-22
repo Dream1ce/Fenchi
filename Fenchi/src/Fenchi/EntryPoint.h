@@ -5,7 +5,10 @@ extern Fenchi::Application* Fenchi::CreateApplication();
 
 int main(int argc, char** argv)
 {
-	printf("Fenchi Engine\n");
+	Fenchi::Log::Init();
+	FC_CORE_INFO("Initialized Log!");
+	FC_CLIENT_WARN("Initialized Log!");
+	FC_CLIENT_INFO("Hello var={0}", 5);
 	auto app = Fenchi::CreateApplication();
 	app->run();
 	delete app;

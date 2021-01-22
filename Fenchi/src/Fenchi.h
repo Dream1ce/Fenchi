@@ -4,7 +4,7 @@
 #include<stdio.h>
 
 #include"Fenchi/Application.h"
-
+#include"Fenchi/Log.h"
 
 
 //---Entry Point------------

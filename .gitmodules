@@ -1,0 +1,3 @@
+[submodule "Fenchi/vendor/spdlog"]
+	path = Fenchi/vendor/spdlog
+	url = https://github.com/gabime/spdlog.git

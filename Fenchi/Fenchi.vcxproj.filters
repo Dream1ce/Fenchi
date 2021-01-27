@@ -4,6 +4,15 @@
     <Filter Include="Fenchi">
       <UniqueIdentifier>{52D089B2-3E72-B488-272D-C8DC136E3BD9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fenchi\Events">
+      <UniqueIdentifier>{F6ABEB53-626C-678A-2BA7-B0079726AC66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fenchi\Platform">
+      <UniqueIdentifier>{E688A419-5214-12DE-5B25-95D2C72F6EDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fenchi\Platform\Windows">
+      <UniqueIdentifier>{20B987C7-8CF0-CF5E-95FA-338201B1F657}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Fenchi.h" />
@@ -13,12 +22,31 @@
     <ClInclude Include="src\Fenchi\EntryPoint.h">
       <Filter>Fenchi</Filter>
     </ClInclude>
+    <ClInclude Include="src\Fenchi\Events\ApplicationEvent.h">
+      <Filter>Fenchi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fenchi\Events\Event.h">
+      <Filter>Fenchi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fenchi\Events\KeyEvent.h">
+      <Filter>Fenchi\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fenchi\Events\MouseEvent.h">
+      <Filter>Fenchi\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Fenchi\Log.h">
+      <Filter>Fenchi</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fenchi\Platform\Windows\WindowsWindow.h">
+      <Filter>Fenchi\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fenchi\Window.h">
       <Filter>Fenchi</Filter>
     </ClInclude>
     <ClInclude Include="src\Fenchi\core.h">
       <Filter>Fenchi</Filter>
     </ClInclude>
+    <ClInclude Include="src\fcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Fenchi\Application.cpp">
@@ -27,5 +55,9 @@
     <ClCompile Include="src\Fenchi\Log.cpp">
       <Filter>Fenchi</Filter>
     </ClCompile>
+    <ClCompile Include="src\Fenchi\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Fenchi\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fcpch.cpp" />
   </ItemGroup>
 </Project>

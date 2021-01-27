@@ -1,3 +1,6 @@
 [submodule "Fenchi/vendor/spdlog"]
 	path = Fenchi/vendor/spdlog
 	url = https://github.com/gabime/spdlog.git
+[submodule "Fenchi/vendor/GLFW"]
+	path = Fenchi/vendor/GLFW
+	url = https://github.com/TheCherno/glfw

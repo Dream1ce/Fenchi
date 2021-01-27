@@ -10,6 +10,11 @@ workspace "Fenchi"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Fenchi/vendor/GLFW/include"
+
+include "Fenchi/vendor/GLFW"
+
 project "Fenchi"
 	location "Fenchi"
 	kind "SharedLib"
@@ -17,6 +22,9 @@ project "Fenchi"
 
 	targetdir ("bin/"..outputdir.."/%{prj.name}")
 	objdir ("bin-int/"..outputdir.."/%{prj.name}")
+
+	pchheader "fcpch.h"
+	pchsource "Fenchi/src/fcpch.cpp"
 
 	files
 	{
@@ -26,7 +34,15 @@ project "Fenchi"
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

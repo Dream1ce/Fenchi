@@ -1,3 +1,4 @@
+#include"fcpch.h"
 #include"Log.h"
 
 namespace Fenchi
